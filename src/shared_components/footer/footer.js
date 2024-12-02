@@ -9,6 +9,7 @@ class Footer extends HTMLElement {
                     bottom: 0;
                 }
             </style>
+            
             <div>
                 <a id="my-footer-1" href="../about/page.html">
                     <h1>JPDwonders</h1>

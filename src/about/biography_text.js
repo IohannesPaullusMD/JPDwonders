@@ -7,6 +7,6 @@ const introText = `
     fames primis convallis nisi.
 `;
 
-const introTag = document.getElementById('intro-paragraph');
+const introTag = document.getElementById('biography');
 introTag.innerHTML = introText;
 introTag.style.textAlign = 'justify';
