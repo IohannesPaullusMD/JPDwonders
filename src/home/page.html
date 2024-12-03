@@ -11,19 +11,27 @@
         <script src="./intro_text.js" defer></script>
         <script src="../portfolios/links.js" defer></script>
         <script src="../shared_components/footer/footer.js" defer></script>
+        
     </head>
 
     <body>
-        <my-header></my-header>
-        <my-nav-bar></my-nav-bar>
+        <my-header home-ref="../home/page.html">
+        </my-header>
+        
+        <my-nav-bar 
+                home-ref="../home/page.html" 
+                portfolios-ref="../portfolios/page.html"
+                about-ref="../about/page.html">
+        </my-nav-bar>
         
         <br>
         <div><p id="intro"></p></div>
         <br>
 
-        <portfolio-links></portfolio-links>
+        <portfolio-links page="home"></portfolio-links>
         
-        <my-footer></my-footer>
+        <my-footer about-ref="../about/page.html">
+        </my-footer>
 
     </body>
 </html>

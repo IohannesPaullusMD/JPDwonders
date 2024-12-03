@@ -13,12 +13,19 @@
     </head>
 
     <body>
-        <my-header></my-header>
-        <my-nav-bar></my-nav-bar>
-
-        <portfolio-links></portfolio-links>
+        <my-header home-ref="../home/page.html">
+        </my-header>
         
-        <my-footer></my-footer>
+        <my-nav-bar 
+                home-ref="../home/page.html" 
+                portfolios-ref="../portfolios/page.html"
+                about-ref="../about/page.html">
+        </my-nav-bar>
+
+        <portfolio-links page="portfolios"></portfolio-links>
+        
+        <my-footer about-ref="../about/page.html">
+        </my-footer>
 
     </body>
 </html>

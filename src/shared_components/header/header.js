@@ -4,7 +4,7 @@ class Header extends HTMLElement {
         this.attachShadow({ mode: 'open' });
         this.shadowRoot.innerHTML = `
             <div>
-                <a href="../home/page.html">
+                <a href="${this.getAttribute('home-ref')}">
                     <h1>JPDwonders</h1>
                 </a>
             </div>

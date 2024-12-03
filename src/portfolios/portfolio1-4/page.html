@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>JPDwonders</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link id="linker">
+
+        <script src="../../shared_components/header/header.js" defer></script>
+        <script src="../../shared_components/nav_bar/nav_bar.js" defer></script>
+        <script src="query_parser.js" defer></script>
+        <script src="button_controller.js" defer></script>
+        <script src="../../shared_components/footer/footer.js" defer></script>
+
+    </head>
+
+    <body>
+        <my-header home-ref="../../home/page.html"></my-header>
+        
+        <my-nav-bar 
+                home-ref="../../home/page.html" 
+                portfolios-ref="../../portfolios/page.html"
+                about-ref="../../about/page.html">
+        </my-nav-bar>
+
+        <br> <br> <a id="go-back"> &larr; Go Back </a> <br>
+
+        <h1 id="title">Title</h1>
+
+        <br> <div>
+            <img id="slides" alt="img" width="600" height="400">
+        </div> <br>
+
+        <br> <span>
+            <button id="prev-button"> &lt; </button>
+            <button id="next-button"> &gt; </button>
+            <span id="page-num"></span>
+        </span> <br>
+
+        <br> <div> 
+            <h2> References </h2>
+            <ul id="references"></ul> 
+        </div> <br>
+        <script id="ref-script"></script>
+        
+        <my-footer about-ref="../../about/page.html"></my-footer>
+
+    </body>
+</html>

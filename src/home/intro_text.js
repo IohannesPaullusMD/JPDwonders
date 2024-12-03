@@ -1,4 +1,4 @@
-const tab = "&nbsp;&nbsp;&nbsp;&nbsp;"
+const tab = "&nbsp;&nbsp;&nbsp;&nbsp;";
 
 const introText = `
     ${tab} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

@@ -10,23 +10,24 @@ class NavBar extends HTMLElement {
             </span>
         `;
 
-        this.shadowRoot.getElementById('home-button').addEventListener('click', goToHomePage);
-        this.shadowRoot.getElementById('portfolios-button').addEventListener('click', goToPortfoliosPage);
-        this.shadowRoot.getElementById('about-button').addEventListener('click', goToAboutPage);
+        this.shadowRoot.getElementById('home-button').style.cursor = 'pointer';
+        this.shadowRoot.getElementById('portfolios-button').style.cursor = 'pointer';
+        this.shadowRoot.getElementById('about-button').style.cursor = 'pointer';
+
+        this.shadowRoot.getElementById('home-button').addEventListener('click', () => {
+            window.location.href = this.getAttribute('home-ref');
+        });
+
+        this.shadowRoot.getElementById('portfolios-button').addEventListener('click', () => {
+            window.location.href = this.getAttribute('portfolios-ref');
+        });
+        this.shadowRoot.getElementById('about-button').addEventListener('click', () => {
+            window.location.href = this.getAttribute('about-ref');
+        });
 
     }
 
 }
+
 customElements.define('my-nav-bar', NavBar);
 
-function goToHomePage() {
-    window.location.href = '../home/page.html';
-}
-
-function goToPortfoliosPage() {
-    window.location.href = '../portfolios/page.html';
-}
-
-function goToAboutPage() {
-    window.location.href = '../about/page.html';
-}
