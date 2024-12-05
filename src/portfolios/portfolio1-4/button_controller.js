@@ -8,16 +8,14 @@ function fn() {
 
     
     let currSlide = img.getAttribute('curr-slide');
-    {
-        let head = document.head
-        for (let i = currSlide; i < nSlides; i++) {
-            let link = document.createElement('link');
-            link.rel = 'preload';
-            link.href = `${page}/slides/Slide${i}.SVG`;
-            head.appendChild(link);
-        }
-    }
     
+    for (let i = currSlide; i <= nSlides; i++) {
+        let link = document.createElement('link');
+        link.rel = 'preload';
+        link.href = `${page}/slides/Slide${i}.SVG`;
+        link.as = 'image';
+        document.head.appendChild(link);
+    }
     
     nextButton.addEventListener('click', () => {
         
