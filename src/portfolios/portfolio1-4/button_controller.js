@@ -6,7 +6,18 @@ function fn() {
     const nSlides = img.getAttribute('n-slides');
     const page = img.getAttribute('page');
 
+    
     let currSlide = img.getAttribute('curr-slide');
+    {
+        let head = document.head
+        for (let i = currSlide; i < nSlides; i++) {
+            let link = document.createElement('link');
+            link.rel = 'prefetch';
+            link.href = `${page}/slides/Slide${i}.SVG`;
+            head.appendChild(link);
+        }
+    }
+    
     
     nextButton.addEventListener('click', () => {
         
