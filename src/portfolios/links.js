@@ -8,19 +8,38 @@ class PortfolioLinks extends HTMLElement {
             <br>
             <div>
                 <ul>
-                    <li> <span class="links" id="portfolio1"> Portfolio 1 </a> </li>
-                    <li> <span class="links" id="portfolio2"> Portfolio 2 </a> </li>
-                    <li> <span class="links" id="portfolio3"> Portfolio 3 </a> </li>
-                    <li> <span class="links" id="portfolio4"> Portfolio 4 </a> </li>
-                    <li> <span class="links" id="portfolio5"> Portfolio 5 </a> </li>
-                    <li> <span class="links" id="portfolio6"> Portfolio 6 </a> </li>
+                    <li> <span class="links" id="portfolio1"> 
+                        Portfolio#1 - Computer Science as Discipline, Computing Disciplines and Majors 
+                    </span> </li>
+
+                    <li> <span class="links" id="portfolio2"> 
+                        Portfolio#2 - Data, Information, and Information Systems
+                    </span> </li>
+
+                    <li> <span class="links" id="portfolio3"> 
+                        Portfolio#3 - Number Systems
+                    </span> </li>
+
+                    <li> <span class="links" id="portfolio4"> 
+                        Portfolio#4 - Computer Hardware and Software: Their Implementation in the different institutions in the community
+                    </span> </li>
+
+                    <li> <span class="links" id="portfolio5"> 
+                        Portfolio#5 - Comparative Study on Different Types of Motherboards 
+                    </span> </li>
+
+                    <li> <span class="links" id="portfolio6">
+                        Portfolio#6 - Comparative Study on Different Types of Computers
+                    </span> </li>
                 </ul>
             </div>
             <br>
         `;
 
         for (let i = 1; i <= 6; i++) {
-            this.shadowRoot.getElementById(`portfolio${i}`).style.cursor = 'pointer';
+            let link = this.shadowRoot.getElementById(`portfolio${i}`)
+            link.style.cursor = 'pointer';
+            link.setAttribute('title', `Go to Portfolio#${i}`);
         }
 
         this.shadowRoot.getElementById('portfolio1').addEventListener('click', () => {

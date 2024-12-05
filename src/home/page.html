@@ -6,6 +6,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- <link rel="stylesheet" href="../globals.css"> -->
+
         <script src="../shared_components/header/header.js" defer></script>
         <script src="../shared_components/nav_bar/nav_bar.js" defer></script>
         <script src="./intro_text.js" defer></script>
@@ -15,23 +17,25 @@
     </head>
 
     <body>
-        <my-header home-ref="../home/page.html">
-        </my-header>
-        
-        <my-nav-bar 
-                home-ref="../home/page.html" 
-                portfolios-ref="../portfolios/page.html"
-                about-ref="../about/page.html">
-        </my-nav-bar>
-        
-        <br>
-        <div><p id="intro"></p></div>
-        <br>
-
-        <portfolio-links page="home"></portfolio-links>
-        
-        <my-footer about-ref="../about/page.html">
-        </my-footer>
+        <div class="container">
+            <my-header home-ref="../home/page.html">
+            </my-header>
+            
+            <my-nav-bar 
+                    home-ref="../home/page.html" 
+                    portfolios-ref="../portfolios/page.html"
+                    about-ref="../about/page.html">
+            </my-nav-bar>
+            
+            <br>
+            <div><p id="intro"></p></div>
+            <br>
+    
+            <portfolio-links page="home"></portfolio-links>
+            
+            <my-footer about-ref="../about/page.html" push-bottom="yes">
+            </my-footer>
+        </div>
 
     </body>
 </html>

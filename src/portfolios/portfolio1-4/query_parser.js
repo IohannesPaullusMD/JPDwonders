@@ -3,19 +3,19 @@ function getTitle(page) {
 
     switch (page) {
         case 'portfolio1':
-            title = 'Portfolio 1'
+            title = 'Portfolio#1 - Computer Science as Discipline, Computing Disciplines and Majors'
             break;
     
         case 'portfolio2':
-            title = 'Portfolio 2'
+            title = 'Portfolio#2 - Data, Information, and Information Systems'
             break;
 
         case 'portfolio3':
-            title = 'Portfolio 3'
+            title = 'Portfolio#3 - Number Systems'
             break;
 
         case 'portfolio4':
-            title = 'Portfolio 4'
+            title = 'Portfolio#4 - Computer Hardware and Software: Their Implementation in the different institutions in the community'
             break;
     }
 
