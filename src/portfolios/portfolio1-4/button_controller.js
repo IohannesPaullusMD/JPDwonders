@@ -12,7 +12,7 @@ function fn() {
         let head = document.head
         for (let i = currSlide; i < nSlides; i++) {
             let link = document.createElement('link');
-            link.rel = 'prefetch';
+            link.rel = 'preload';
             link.href = `${page}/slides/Slide${i}.SVG`;
             head.appendChild(link);
         }
