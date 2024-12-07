@@ -4,9 +4,6 @@ class NavBar extends HTMLElement {
         this.attachShadow({ mode: 'open' });
         this.shadowRoot.innerHTML = `
             <style>
-                button {
-                    transition: background-color 0.3s, color 0.3s;
-                }
                 button:hover {
                     background-color: #000000;
                     color: #ffffff;
