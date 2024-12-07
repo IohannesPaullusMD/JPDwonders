@@ -9,7 +9,7 @@ function fn() {
         `;
 
         const computersText = [
-                // supercomputer
+                        // supercomputer
                         `${tab} Supercomputers like IBM Summit are the powerhouses of the
                         computing world, designed to handle extremely complex calculations and
                         simulations. Their multiple CPUs and parallel processing capabilities
@@ -61,17 +61,24 @@ function fn() {
                 const divTag2 = document.createElement('div'); // <p> container
                 const divTag3 = document.createElement('div'); // <img> container
 
+
                 pTag.innerHTML = computersText[i];
                 pTag.style.textAlign = 'justify';
+                pTag.style.margin = '0px 10px';
 
                 imgTag.src = `./images/figure${i + 1}.png`;
                 imgTag.alt = `figure${i + 1}`;
+
+                divTag1.className = `intro-div computer${i + 1}`;
+                divTag2.id = `p-container`;
+                divTag3.id = `img-container`;
 
                 divTag2.appendChild(pTag);
                 divTag3.appendChild(imgTag);
                 divTag1.appendChild(divTag2);
                 divTag1.appendChild(divTag3);
                 container.appendChild(divTag1);
+                container.appendChild(document.createElement('br'));
         }
 }
 

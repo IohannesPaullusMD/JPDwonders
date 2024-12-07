@@ -1,3 +1,32 @@
+.intro-div {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    
+}
+.intro-div #p-container {
+    margin-right: 10px;
+    width: 50%;
+}
+.intro-div #img-container {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
 img {
+    width: 50%;
+    height: 50%;
+}
+
+.computer3 img {
+    
+    height: 25%;
+    width: 25%;
+}
+
+.intro-computers {
     border: 1px solid black;
 }

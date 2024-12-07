@@ -7,37 +7,37 @@ class PortfolioLinks extends HTMLElement {
         this.shadowRoot.innerHTML = `
             <br>
             <div>
-                <ul>
-                    <li> <span class="links" id="portfolio1"> 
-                        Portfolio#1 - Computer Science as Discipline, Computing Disciplines and Majors 
-                    </span> </li>
+                <div class="links" id="portfolio1"> 
+                    Portfolio#1 - Computer Science as Discipline, Computing Disciplines and Majors 
+                </div>
 
-                    <li> <span class="links" id="portfolio2"> 
-                        Portfolio#2 - Data, Information, and Information Systems
-                    </span> </li>
+                <div class="links" id="portfolio2"> 
+                    Portfolio#2 - Data, Information, and Information Systems
+                </div>
 
-                    <li> <span class="links" id="portfolio3"> 
-                        Portfolio#3 - Number Systems
-                    </span> </li>
+                <div class="links" id="portfolio3"> 
+                    Portfolio#3 - Number Systems
+                </div>
 
-                    <li> <span class="links" id="portfolio4"> 
-                        Portfolio#4 - Computer Hardware and Software: Their Implementation in the different institutions in the community
-                    </span> </li>
+                <div class="links" id="portfolio4"> 
+                    Portfolio#4 - Computer Hardware and Software: Their Implementation in the different institutions in the community
+                </div>
 
-                    <li> <span class="links" id="portfolio5"> 
-                        Portfolio#5 - Comparative Study on Different Types of Motherboards 
-                    </span> </li>
+                <div class="links" id="portfolio5"> 
+                    Portfolio#5 - Comparative Study on Different Types of Motherboards 
+                </div>
 
-                    <li> <span class="links" id="portfolio6">
-                        Portfolio#6 - Comparative Study on Different Types of Computers
-                    </span> </li>
-                </ul>
+                <div class="links" id="portfolio6">
+                    Portfolio#6 - Comparative Study on Different Types of Computers
+                </div>
+                
             </div>
             <br>
         `;
 
         for (let i = 1; i <= 6; i++) {
             let link = this.shadowRoot.getElementById(`portfolio${i}`)
+            link.style.marginBottom = '10px';
             link.style.cursor = 'pointer';
             link.setAttribute('title', `Go to Portfolio#${i}`);
         }
@@ -60,7 +60,14 @@ class PortfolioLinks extends HTMLElement {
         this.shadowRoot.getElementById('portfolio6').addEventListener('click', () => {
             window.location.href = `../portfolios/portfolio6/page.html?prev-page=${page}`;
         });
+
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = '../portfolios/links_style.css';
+        this.shadowRoot.appendChild(link);
     }
 
 }
 customElements.define('portfolio-links', PortfolioLinks);
+
+

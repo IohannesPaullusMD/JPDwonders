@@ -3,6 +3,16 @@ class NavBar extends HTMLElement {
         super();
         this.attachShadow({ mode: 'open' });
         this.shadowRoot.innerHTML = `
+            <style>
+                button {
+                    transition: background-color 0.3s, color 0.3s;
+                }
+                button:hover {
+                    background-color: #000000;
+                    color: #ffffff;
+                }
+            </style>
+
             <span>
                 <button id='home-button'> Home </button>
                 <button id='portfolios-button'> Porfolios </button>
@@ -24,7 +34,6 @@ class NavBar extends HTMLElement {
         this.shadowRoot.getElementById('about-button').addEventListener('click', () => {
             window.location.href = this.getAttribute('about-ref');
         });
-
     }
 
 }
