@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="../globals.css">
+        <link rel="stylesheet" href="./page_style.css">
 
         <!-- <style>
             a {
@@ -19,54 +20,52 @@
             }
         </style> -->
 
-        <script src="../shared_components/header/header.js" defer></script>
-        <script src="../shared_components/nav_bar/nav_bar.js" defer></script>
+        <script src="../shared_components/header.js" defer></script>
+        <script src="../shared_components/nav_bar.js" defer></script>
         <script src="./biography_text.js" defer></script>
-        <script src="../shared_components/footer/footer.js" defer></script>
+        <script src="../shared_components/footer.js" defer></script>
     </head>
 
     <body>
         <div class="root-container">
-            <my-header home-ref="../home/page.html">
-            </my-header>
+            <div 
+                class="header section" 
+                home-ref="../home/page.html"
+            ></div>
             
-            <my-nav-bar 
-                    home-ref="../home/page.html" 
-                    portfolios-ref="../portfolios/page.html"
-                    about-ref="../about/page.html">
-            </my-nav-bar>
+            <div 
+                class="nav-bar section"
+                home-ref="../home/page.html" 
+                portfolios-ref="../portfolios/page.html"
+                about-ref="../about/page.html"
+            ></div>
     
-            <br>
-            <div>
-                <p id="biography"></p>
+            <div class="biography section">
+                <p id="biography-text"></p>
             </div>
-            <br>
     
-            <br>
-            <div>
-                <a href="mailto:johnpaulmdenaya@gmail.com">
-                    <img class="image" src="./icons/google_mail_icon.svg" width="25" height="25" >
-                    johnpaulmdenaya@gmail.com
-                </a>
-    
-                <br> 
-    
+            <div class="contacts section">
                 <a href="https://github.com/IohannesPaullusMD" target="_blank">
-                    <img class="image" src="./icons/github-mark/github-mark.svg" width="25" height="25" >
-                    IohannesPaullusMD
+                    <img class="image" src="./icons/github-mark/github-mark.svg" width="25px" alt="GitHub">
+                    <p>IohannesPaullusMD</p>
                 </a>
-    
-                <br>
+                
+                <a href="mailto:johnpaulmdenaya@gmail.com">
+                    <img class="image" src="./icons/google_mail_icon.svg" width="25px" alt="Gmail">
+                    <p>johnpaulmdenaya@gmail.com</p>
+                </a>
     
                 <a href="https://www.linkedin.com/in/john-paul-denaya-726a40277" target="_blank">
-                    <img class="image" src="./icons/linkedin_logo_icon.svg" width="25" height="25" >
-                    John Paul Denaya
+                    <img class="image" src="./icons/linkedin_logo_icon.svg" width="25px" alt="LinkedIn">
+                    <p>John Paul Denaya</p>
                 </a>
             </div>
-            <br>
             
-            <my-footer about-ref="../about/page.html" push-bottom="yes">
-            </my-footer>
+            <div 
+                class="footer section"
+                about-ref="../about/page.html" 
+                push-bottom="yes"
+            ></div>
         </div>
 
     </body>

@@ -25,11 +25,12 @@ function fn() {
         <b> Future Goals and Aspirations </b> <br>
         I aim to be a polymath—a person with knowledge in many different areas. 
         This goal motivates me to keep learning and exploring various subjects.
-        <br><br><br>
+        <br><br>
+        
         Thanks for reading about my journey. I hope to keep growing and making a difference through my interests and skills.
     `;
 
-    const introTag = document.getElementById('biography');
+    const introTag = document.getElementById('biography-text');
     introTag.innerHTML = introText;
     introTag.style.textAlign = 'justify';
 }
