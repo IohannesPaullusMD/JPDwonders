@@ -11,7 +11,7 @@
         <script src="../shared_components/header.js" defer></script>
         <script src="../shared_components/nav_bar.js" defer></script>
         <script src="./intro_text.js" defer></script>
-        <script src="../portfolios/links.js" defer></script>
+        <script src="../shared_components/portfolio_links.js" defer></script>
         <script src="../shared_components/footer.js" defer></script>
         
     </head>
@@ -20,23 +20,23 @@
         <div class="root-container">
 
             <div 
-                class="section header" 
+                class="header section" 
                 home-ref="../home/page.html"
             ></div>
             
             <div 
-                class="section nav-bar"
+                class="nav-bar section"
                 home-ref="../home/page.html" 
                 portfolios-ref="../portfolios/page.html"
                 about-ref="../about/page.html"
             ></div>
             
-            <br><div class="section"><p id="intro"></p></div>
+            <div class="intro section"><p id="intro-text"></p></div>
     
-            <portfolio-links page="home"></portfolio-links>
+            <div class="portfolio-links section" page="home"></div>
             
             <div 
-                class="section footer"
+                class="footer section"
                 about-ref="../about/page.html" 
                 push-bottom="yes"
             ></div>

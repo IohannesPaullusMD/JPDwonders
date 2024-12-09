@@ -20,7 +20,7 @@ a, p, h1 {
 
 a {
     color: #000000;
-
+    
     &:hover {
         color: #10008b;
     }
@@ -49,4 +49,9 @@ p {
     padding-left: 10px;
     padding-right: 10px;
     height: 100%;
+}
+
+.portfolio-links, .intro {
+    display: block;
+    margin-top: auto;
 }

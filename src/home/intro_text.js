@@ -13,7 +13,7 @@ function fn() {
             Thanks for visiting, and enjoy your stay!
     `;
 
-    const introTag = document.getElementById('intro');
+    const introTag = document.getElementById('intro-text');
     introTag.innerHTML = introText;
 }
 
