@@ -6,7 +6,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <style>
+        <link rel="stylesheet" href="../globals.css">
+
+        <!-- <style>
             a {
                 display: flex; 
                 align-items: center;
@@ -15,7 +17,7 @@
                     margin-right: 5px;
                 }
             }
-        </style>
+        </style> -->
 
         <script src="../shared_components/header/header.js" defer></script>
         <script src="../shared_components/nav_bar/nav_bar.js" defer></script>
@@ -24,46 +26,48 @@
     </head>
 
     <body>
-        <my-header home-ref="../home/page.html">
-        </my-header>
-        
-        <my-nav-bar 
-                home-ref="../home/page.html" 
-                portfolios-ref="../portfolios/page.html"
-                about-ref="../about/page.html">
-        </my-nav-bar>
-
-        <br>
-        <div>
-            <p id="biography"></p>
-        </div>
-        <br>
-
-        <br>
-        <div>
-            <a href="mailto:johnpaulmdenaya@gmail.com">
-                <img class="image" src="./icons/google_mail_icon.svg" width="25" height="25" >
-                johnpaulmdenaya@gmail.com
-            </a>
-
-            <br> 
-
-            <a href="https://github.com/IohannesPaullusMD" target="_blank">
-                <img class="image" src="./icons/github-mark/github-mark.svg" width="25" height="25" >
-                IohannesPaullusMD
-            </a>
-
+        <div class="root-container">
+            <my-header home-ref="../home/page.html">
+            </my-header>
+            
+            <my-nav-bar 
+                    home-ref="../home/page.html" 
+                    portfolios-ref="../portfolios/page.html"
+                    about-ref="../about/page.html">
+            </my-nav-bar>
+    
             <br>
-
-            <a href="https://www.linkedin.com/in/john-paul-denaya-726a40277" target="_blank">
-                <img class="image" src="./icons/linkedin_logo_icon.svg" width="25" height="25" >
-                John Paul Denaya
-            </a>
+            <div>
+                <p id="biography"></p>
+            </div>
+            <br>
+    
+            <br>
+            <div>
+                <a href="mailto:johnpaulmdenaya@gmail.com">
+                    <img class="image" src="./icons/google_mail_icon.svg" width="25" height="25" >
+                    johnpaulmdenaya@gmail.com
+                </a>
+    
+                <br> 
+    
+                <a href="https://github.com/IohannesPaullusMD" target="_blank">
+                    <img class="image" src="./icons/github-mark/github-mark.svg" width="25" height="25" >
+                    IohannesPaullusMD
+                </a>
+    
+                <br>
+    
+                <a href="https://www.linkedin.com/in/john-paul-denaya-726a40277" target="_blank">
+                    <img class="image" src="./icons/linkedin_logo_icon.svg" width="25" height="25" >
+                    John Paul Denaya
+                </a>
+            </div>
+            <br>
+            
+            <my-footer about-ref="../about/page.html" push-bottom="yes">
+            </my-footer>
         </div>
-        <br>
-        
-        <my-footer about-ref="../about/page.html" push-bottom="yes">
-        </my-footer>
 
     </body>
 </html>

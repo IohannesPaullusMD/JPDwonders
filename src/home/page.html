@@ -6,36 +6,40 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- <link rel="stylesheet" href="../globals.css"> -->
+        <link rel="stylesheet" href="../globals.css">
 
-        <script src="../shared_components/header/header.js" defer></script>
-        <script src="../shared_components/nav_bar/nav_bar.js" defer></script>
+        <script src="../shared_components/header.js" defer></script>
+        <script src="../shared_components/nav_bar.js" defer></script>
         <script src="./intro_text.js" defer></script>
         <script src="../portfolios/links.js" defer></script>
-        <script src="../shared_components/footer/footer.js" defer></script>
+        <script src="../shared_components/footer.js" defer></script>
         
     </head>
 
     <body>
-        <div class="container">
-            <my-header home-ref="../home/page.html">
-            </my-header>
+        <div class="root-container">
+
+            <div 
+                class="section header" 
+                home-ref="../home/page.html"
+            ></div>
             
-            <my-nav-bar 
-                    home-ref="../home/page.html" 
-                    portfolios-ref="../portfolios/page.html"
-                    about-ref="../about/page.html">
-            </my-nav-bar>
+            <div 
+                class="section nav-bar"
+                home-ref="../home/page.html" 
+                portfolios-ref="../portfolios/page.html"
+                about-ref="../about/page.html"
+            ></div>
             
-            <br>
-            <div><p id="intro"></p></div>
-            <br>
+            <br><div class="section"><p id="intro"></p></div>
     
             <portfolio-links page="home"></portfolio-links>
             
-            <my-footer about-ref="../about/page.html" push-bottom="yes">
-            </my-footer>
+            <div 
+                class="section footer"
+                about-ref="../about/page.html" 
+                push-bottom="yes"
+            ></div>
         </div>
-
     </body>
 </html>

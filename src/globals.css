@@ -1,0 +1,52 @@
+body {
+    background-color: white;
+    display: flex;
+    margin: 0px;
+    height: 100vh;
+}
+
+.root-container {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+a, p, h1 {
+    text-align: justify;
+    text-decoration: none;
+    margin: 0px;
+}
+
+a {
+    color: #000000;
+
+    &:hover {
+        color: #10008b;
+    }
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* this is important...*/
+.section {
+    background-color: gray;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.nav-bar a{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+}

@@ -15,7 +15,6 @@ function fn() {
 
     const introTag = document.getElementById('intro');
     introTag.innerHTML = introText;
-    introTag.style.textAlign = 'justify';
 }
 
 fn();
