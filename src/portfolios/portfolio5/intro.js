@@ -1,4 +1,4 @@
-function fn() {
+(() => {
         const tab = "&nbsp;&nbsp;&nbsp;&nbsp;";
 
         const introText = `${tab}Motherboards are the backbone of any computer system, serving as the central
@@ -17,6 +17,4 @@ function fn() {
         introTag.innerHTML = introText;
         introTag.style.textAlign = 'justify';
 
-}
-
-fn();
+})();

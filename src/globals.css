@@ -50,12 +50,12 @@ p {
     height: 100%;
 }
 
-.portfolio-links, .intro{
+.portfolio-links, .intro {
     display: block;
     margin-top: auto;
 }
 
-.title {
+.title, .introduction, .discussion {
     display: block;
 }
 

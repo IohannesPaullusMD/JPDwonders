@@ -1,4 +1,4 @@
-function fn() {
+(() => {
         const tab = "&nbsp;&nbsp;&nbsp;&nbsp;";
 
         const discussionText = `${tab}Starting with the AT motherboard, this was one of the first types designed and is mostly
@@ -19,9 +19,7 @@ function fn() {
                 high-end or specialized builds, an Extended-ATX or BTX motherboard might be more suitable.
         `;
 
-        const discussionTag = document.getElementById('discussion');
+        const discussionTag = document.getElementById('discussion-text');
         discussionTag.innerHTML = discussionText;
         discussionTag.style.textAlign = 'justify';
-}
-
-fn();
+})();

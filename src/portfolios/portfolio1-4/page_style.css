@@ -26,6 +26,10 @@
     color: white;
 }
 
+.references ul {
+    padding-right: 40px;
+}
+
 .references ul li {
     padding-bottom: 10px;
 }
