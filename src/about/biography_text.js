@@ -1,4 +1,4 @@
-function fn() {
+(() => {
     const introText = `
         Hi! I'm JP Denaya, and I wish you a peaceful mind. Here's a bit about me and my journey.
         <br><br>
@@ -33,6 +33,4 @@ function fn() {
     const introTag = document.getElementById('biography-text');
     introTag.innerHTML = introText;
     introTag.style.textAlign = 'justify';
-}
-
-fn();
+})();

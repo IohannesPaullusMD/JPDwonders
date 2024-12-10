@@ -8,28 +8,33 @@
 
         <link rel="stylesheet" href="../globals.css">
 
-        <script src="../shared_components/header/header.js" defer></script>
-        <script src="../shared_components/nav_bar/nav_bar.js" defer></script>
-        <script src="./links.js" defer></script>
-        <script src="../shared_components/footer/footer.js" defer></script>
+        <script src="../shared_components/header.js" defer></script>
+        <script src="../shared_components/nav_bar.js" defer></script>
+        <script src="../shared_components/portfolio_links.js" defer></script>
+        <script src="../shared_components/footer.js" defer></script>
     </head>
 
     <body>
         <div class="root-container">
-            <my-header home-ref="../home/page.html">
-            </my-header>
+            <div 
+                class="header section" 
+                home-ref="../home/page.html"
+            ></div>
             
-            <my-nav-bar 
-                    home-ref="../home/page.html" 
-                    portfolios-ref="../portfolios/page.html"
-                    about-ref="../about/page.html">
-            </my-nav-bar>
+            <div 
+                class="nav-bar section"
+                home-ref="../home/page.html" 
+                portfolios-ref="../portfolios/page.html"
+                about-ref="../about/page.html"
+            ></div>
             
-            <br>
-            <portfolio-links page="portfolios"></portfolio-links>
+            <div class="portfolio-links section" page="portfolios"></div>
             
-            <my-footer about-ref="../about/page.html" push-bottom="yes">
-            </my-footer>
+            <div 
+                class="footer section"
+                about-ref="../about/page.html" 
+                push-bottom="yes"
+            ></div>
         </div>
 
     </body>

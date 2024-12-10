@@ -1,4 +1,4 @@
-function fn() {
+(() => {
     const tab = "&nbsp;&nbsp;&nbsp;&nbsp;";
 
     const introText = `
@@ -15,6 +15,4 @@ function fn() {
 
     const introTag = document.getElementById('intro-text');
     introTag.innerHTML = introText;
-}
-
-fn();
+})();

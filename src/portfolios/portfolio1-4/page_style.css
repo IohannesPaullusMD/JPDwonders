@@ -1,0 +1,31 @@
+.ppt {
+    display: block;
+}
+
+.ppt img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    padding-bottom: 5px;
+}
+
+.ppt span {
+    display: flex;
+    justify-content: center;
+}
+
+.ppt button {
+    border: none;
+    border-radius: 2.5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.ppt button:hover {
+    background-color: #10008b;
+    color: white;
+}
+
+.references ul li {
+    padding-bottom: 10px;
+}

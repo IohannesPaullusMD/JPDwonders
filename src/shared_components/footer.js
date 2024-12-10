@@ -1,15 +1,3 @@
-
-/*
-<style>
-    #my-footer-1 {
-        position: fixed;
-        bottom: 0;
-    }
-</style>
-*/
-
-
-
 (() => {
     const footer = document.getElementsByClassName('footer')[0];
     footer.innerHTML = `

@@ -17,14 +17,11 @@ a, p, h1 {
     text-align: justify;
     text-decoration: none;
     margin: 0px;
+    color: inherit;
 }
 
-a {
-    color: #000000;
-    
-    &:hover {
-        color: #10008b;
-    }
+a:hover{
+    color: #10008b;
 }
 
 p {
@@ -56,4 +53,12 @@ p {
 .portfolio-links, .intro{
     display: block;
     margin-top: auto;
+}
+
+.title {
+    display: block;
+}
+
+.title h1{
+    padding-top: 15px;
 }

@@ -22,7 +22,7 @@ function getTitle(page) {
     return title;
 }
 
-function fn() {
+(() => {
     const params = new URLSearchParams(window.location.search);
     const page = params.get('page');
     const nSlides = params.get('n-slides');
@@ -52,6 +52,4 @@ function fn() {
     } else {
         window.location.href = '../page.html';
     }
-}
-
-fn();
+})();

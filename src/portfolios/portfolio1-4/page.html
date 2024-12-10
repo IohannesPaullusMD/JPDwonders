@@ -7,48 +7,60 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="../../globals.css">
+        <link rel="stylesheet" href="page_style.css">
 
         <!-- <link id="linker"> -->
 
-        <script src="../../shared_components/header/header.js" defer></script>
-        <script src="../../shared_components/nav_bar/nav_bar.js" defer></script>
+        <script src="../../shared_components/header.js" defer></script>
+        <script src="../../shared_components/nav_bar.js" defer></script>
         <script src="query_parser.js" defer></script>
         <script src="button_controller.js" defer></script>
-        <script src="../../shared_components/footer/footer.js" defer></script>
+        <script src="../../shared_components/footer.js" defer></script>
 
     </head>
 
     <body>
         <div class="root-container">
-            <my-header home-ref="../../home/page.html"></my-header>
+            <div 
+                class="header section" 
+                home-ref="../../home/page.html"
+            ></div>
         
-            <my-nav-bar 
-                    home-ref="../../home/page.html" 
-                    portfolios-ref="../../portfolios/page.html"
-                    about-ref="../../about/page.html">
-            </my-nav-bar>
+            <div 
+                class="nav-bar section"
+                home-ref="../../home/page.html" 
+                portfolios-ref="../../portfolios/page.html"
+                about-ref="../../about/page.html"
+            ></div>
 
-            <br> <br> <a id="go-back"> &larr; Go Back </a> <br>
+            <div class="title section">
+                <a id="go-back"> &larr; Go Back </a>
+                <h1 id="title">Title</h1>
+            </div>
 
-            <h1 id="title">Title</h1>
+            <div class="ppt section">
+                <img id="slides" alt="img">
+                <span>
+                    <button id="prev-button"> &lt; </button>
+                    <span id="page-num"></span>
+                    <button id="next-button"> &gt; </button>
+                </span>
+            </div>
 
-            <br> <div>
-                <img id="slides" alt="img" width="600" height="400">
-            </div> <br>
 
-            <br> <span>
-                <button id="prev-button"> &lt; </button>
-                <button id="next-button"> &gt; </button>
-                <span id="page-num"></span>
-            </span> <br>
-
-            <br> <div> 
-                <h2> References </h2>
-                <ul id="references"></ul> 
-            </div> <br>
+            <div class="references section"> 
+                <div>
+                    <h2> References </h2>
+                    <ul id="references"></ul> 
+                </div>
+            </div>
             <script id="ref-script"></script>
             
-            <my-footer about-ref="../../about/page.html"></my-footer>
+            <div 
+                class="footer section"
+                about-ref="../../about/page.html" 
+                push-bottom="yes"
+            ></div>
         </div>
 
     </body>

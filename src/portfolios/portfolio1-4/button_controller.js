@@ -1,4 +1,4 @@
-function fn() {
+(() => {
     const prevButton = document.getElementById('prev-button');
     const nextButton = document.getElementById('next-button');
     const img = document.getElementById('slides');
@@ -38,7 +38,5 @@ function fn() {
 
         pageNum.innerHTML = `${currSlide}/${nSlides}`
     });
-}
-
-fn();
+})();
 
