@@ -1,4 +1,4 @@
-function fn() {
+(() => {
         const tab = "&nbsp;&nbsp;&nbsp;&nbsp;";
 
         const introText = `${tab} Computers come in various forms and serve a lot of purposes. From the powerful
@@ -80,6 +80,4 @@ function fn() {
                 container.appendChild(divTag1);
                 container.appendChild(document.createElement('br'));
         }
-}
-
-fn();
+})();
