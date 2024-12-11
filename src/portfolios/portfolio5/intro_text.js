@@ -12,7 +12,7 @@
                 BTX, providing an overview of their characteristics and suitability for different uses.
         `;
 
-        const introTag = document.getElementById('intro');
+        const introTag = document.getElementById('intro-text');
 
         introTag.innerHTML = introText;
         introTag.style.textAlign = 'justify';

@@ -29,7 +29,7 @@ function fn() {
                         each type helps in selecting the right computer for specific needs and applications.
         `;
 
-        const discussionTag = document.getElementById('discussion');
+        const discussionTag = document.getElementById('discussion-text');
         discussionTag.innerHTML = discussionText;
         discussionTag.style.textAlign = 'justify';
 }
